@@ -3,14 +3,14 @@ import { useNavigate } from 'react-router-dom'
 
 import { Routes } from 'router'
 
-const Home = () => {
+const Login = () => {
   const navigate = useNavigate()
 
   return (
     <div>
-      <Button onClick={() => navigate(Routes.LOGIN)}>Go Login</Button>
+      <Button onClick={() => navigate(Routes.HOME)}>Go Home</Button>
     </div>
   )
 }
 
-export default Home
+export default Login

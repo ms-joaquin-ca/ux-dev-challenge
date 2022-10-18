@@ -1,8 +1,6 @@
-import { StyledButton } from './button.styled'
+import type { ButtonProps } from 'typings'
 
-type ButtonProps = {
-  children: React.ReactNode
-}
+import { StyledButton } from './button.styled'
 
 const Button = (props: ButtonProps) => {
   const { children, ...rest } = props

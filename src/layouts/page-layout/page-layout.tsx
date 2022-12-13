@@ -1,10 +1,11 @@
 import { Outlet } from 'react-router-dom'
+import { PageLayoutContainer } from './page-layout.styles'
 
 const PageLayout = () => {
   return (
-    <div style={{ backgroundColor: 'black', width: '100%', height: '100vh' }}>
+    <PageLayoutContainer>
       <Outlet />
-    </div>
+    </PageLayoutContainer>
   )
 }
 

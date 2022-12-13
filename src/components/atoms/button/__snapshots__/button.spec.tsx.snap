@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders a default button and click on it 1`] = `
+<div>
+  <button
+    class="sc-bcXHqe gALbYG"
+    color="primary"
+    elevation="2"
+  >
+    Test Button
+  </button>
+</div>
+`;

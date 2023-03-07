@@ -1,4 +1,4 @@
-import type { Story, Meta } from '@storybook/react'
+import type { Meta, StoryFn } from '@storybook/react'
 
 import type { ButtonProps } from 'typings/components'
 import { Button } from 'components'
@@ -8,21 +8,21 @@ export default {
   component: Button,
   argTypes: {
     variant: {
+      options: ['text', 'outlined', 'contained'],
       control: {
         type: 'select',
-        options: ['text', 'outlined', 'contained'],
       },
     },
     color: {
+      options: ['primary', 'secondary'],
       control: {
         type: 'select',
-        options: ['primary', 'secondary'],
       },
     },
   },
-} as Meta
+} as Meta<typeof Button>
 
-const Template: Story<ButtonProps> = args => <Button {...args} />
+const Template: StoryFn<ButtonProps> = args => <Button {...args} />
 
 const button = Template.bind({})
 

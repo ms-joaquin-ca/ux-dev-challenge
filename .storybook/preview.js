@@ -1,18 +1,21 @@
 import React from 'react'
-import { addDecorator } from '@storybook/react'
 import { ThemeProvider } from 'styled-components'
 
-import '../src/index.css'
+import { Normalize } from '../src/helpers'
 import { theme } from '../src/theme'
 
-export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
-    },
+const preview = {
+  parameters: {
+    actions: { argTypesRegex: '^on[A-Z].*' },
   },
 }
+export const decorators = [
+  Story => (
+    <ThemeProvider theme={theme}>
+      <Normalize />
+      <Story />
+    </ThemeProvider>
+  ),
+]
 
-addDecorator(story => <ThemeProvider theme={theme}>{story()}</ThemeProvider>)
+export default preview

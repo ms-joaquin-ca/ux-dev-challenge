@@ -3,7 +3,7 @@
 exports[`Button renders a default button and click on it 1`] = `
 <div>
   <button
-    class="sc-bcXHqe gALbYG"
+    class="sc-bcXHqe dlyDds"
     color="primary"
     elevation="2"
   >

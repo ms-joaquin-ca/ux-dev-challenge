@@ -78,10 +78,6 @@
   },
   "jest": {
     "displayName": "quiz",
-    "moduleDirectories": [
-      "node_modules",
-      "src"
-    ],
     "collectCoverageFrom": [
       "src/**/*.{ts,tsx}",
       "!src/**/*.d.ts",

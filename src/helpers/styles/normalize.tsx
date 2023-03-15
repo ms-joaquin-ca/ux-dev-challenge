@@ -7,6 +7,7 @@ const normalize = css`
   }
   body {
     margin: 0;
+    font-family: 'Inter', sans-serif;
   }
   h1 {
     font-size: 2em;

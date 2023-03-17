@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { ButtonProps } from 'typings/components'
+
+import type { ButtonProps } from 'typings/components'
 
 export const StyledButton = styled.button<ButtonProps>(
   ({

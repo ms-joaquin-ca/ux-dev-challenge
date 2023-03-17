@@ -11,7 +11,6 @@ const Button = (props: ButtonProps) => {
 Button.defaultProps = {
   variant: 'contained',
   color: 'primary',
-  elevation: 2,
 }
 
 export default Button

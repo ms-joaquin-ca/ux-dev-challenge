@@ -1,9 +1,10 @@
 import { ButtonHTMLAttributes } from 'react'
 
 type CustomButtonProps = {
-  variant: 'contained' | 'outlined' | 'text'
+  variant: 'contained' | 'outlined'
   color: 'primary' | 'secondary'
-  elevation: number
+  disabled: boolean
+  fullWidth: boolean
 }
 
 type Button = ButtonHTMLAttributes<HTMLButtonElement>

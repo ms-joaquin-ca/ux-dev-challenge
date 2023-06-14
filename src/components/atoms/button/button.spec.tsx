@@ -34,4 +34,25 @@ describe('Button', () => {
 
     expect(wrapper.container).toMatchSnapshot()
   })
+
+  it('renders an outlined secondary full width button', () => {
+    const wrapper = setup({
+      ...defaultProps,
+      variant: 'outlined',
+      color: 'secondary',
+      fullWidth: true,
+    })
+
+    expect(wrapper.container).toMatchSnapshot()
+  })
+
+  it('renders a disabled button', () => {
+    const wrapper = setup({ ...defaultProps, disabled: true })
+
+    const button = wrapper.getByRole('button')
+
+    expect(button).toBeDisabled()
+
+    expect(wrapper.container).toMatchSnapshot()
+  })
 })

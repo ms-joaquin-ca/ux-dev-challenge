@@ -8,7 +8,7 @@ export default {
   component: Button,
   argTypes: {
     variant: {
-      options: ['text', 'outlined', 'contained'],
+      options: ['outlined', 'contained'],
       control: {
         type: 'select',
       },
@@ -30,7 +30,8 @@ button.args = {
   children: 'Button',
   variant: 'contained',
   color: 'primary',
-  elevation: 2,
+  disabled: false,
+  fullWidth: false,
 }
 
 export { button }

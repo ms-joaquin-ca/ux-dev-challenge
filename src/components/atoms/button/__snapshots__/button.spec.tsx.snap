@@ -3,9 +3,31 @@
 exports[`Button renders a default button and click on it 1`] = `
 <div>
   <button
-    class="sc-bcXHqe dlyDds"
+    class="sc-bcXHqe iBkrgz"
     color="primary"
-    elevation="2"
+  >
+    Test Button
+  </button>
+</div>
+`;
+
+exports[`Button renders a disabled button 1`] = `
+<div>
+  <button
+    class="sc-bcXHqe gLDDHg"
+    color="primary"
+    disabled=""
+  >
+    Test Button
+  </button>
+</div>
+`;
+
+exports[`Button renders an outlined secondary full width button 1`] = `
+<div>
+  <button
+    class="sc-bcXHqe fJAKEf"
+    color="secondary"
   >
     Test Button
   </button>
